@@ -31,10 +31,10 @@
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             confirmButton = new Button();
             cancelButton = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            usernameLabel = new Label();
+            passwordLabel = new Label();
+            usernameTextBox = new TextBox();
+            passwordTextBox = new TextBox();
             SuspendLayout();
             // 
             // confirmButton
@@ -61,53 +61,53 @@
             cancelButton.UseVisualStyleBackColor = false;
             cancelButton.Click += button2_Click;
             // 
-            // label1
+            // usernameLabel
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(25, 32);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(60, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Username";
-            label1.Click += label1_Click;
+            usernameLabel.AutoSize = true;
+            usernameLabel.Location = new Point(25, 32);
+            usernameLabel.Margin = new Padding(2, 0, 2, 0);
+            usernameLabel.Name = "usernameLabel";
+            usernameLabel.Size = new Size(60, 15);
+            usernameLabel.TabIndex = 2;
+            usernameLabel.Text = "Username";
+            usernameLabel.Click += label1_Click;
             // 
-            // label2
+            // passwordLabel
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(25, 86);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(57, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Password";
-            label2.Click += label2_Click;
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new Point(25, 86);
+            passwordLabel.Margin = new Padding(2, 0, 2, 0);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new Size(57, 15);
+            passwordLabel.TabIndex = 3;
+            passwordLabel.Text = "Password";
+            passwordLabel.Click += label2_Click;
             // 
-            // textBox1
+            // usernameTextBox
             // 
-            textBox1.Location = new Point(25, 55);
-            textBox1.Margin = new Padding(2, 2, 2, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(185, 23);
-            textBox1.TabIndex = 4;
+            usernameTextBox.Location = new Point(25, 55);
+            usernameTextBox.Margin = new Padding(2, 2, 2, 2);
+            usernameTextBox.Name = "usernameTextBox";
+            usernameTextBox.Size = new Size(185, 23);
+            usernameTextBox.TabIndex = 4;
             // 
-            // textBox2
+            // passwordTextBox
             // 
-            textBox2.Location = new Point(25, 112);
-            textBox2.Margin = new Padding(2, 2, 2, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(185, 23);
-            textBox2.TabIndex = 5;
+            passwordTextBox.Location = new Point(25, 112);
+            passwordTextBox.Margin = new Padding(2, 2, 2, 2);
+            passwordTextBox.Name = "passwordTextBox";
+            passwordTextBox.Size = new Size(185, 23);
+            passwordTextBox.TabIndex = 5;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(603, 270);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(passwordTextBox);
+            Controls.Add(usernameTextBox);
+            Controls.Add(passwordLabel);
+            Controls.Add(usernameLabel);
             Controls.Add(cancelButton);
             Controls.Add(confirmButton);
             Margin = new Padding(2, 2, 2, 2);
@@ -122,9 +122,9 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Button confirmButton;
         private Button cancelButton;
-        private Label label1;
-        private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Label usernameLabel;
+        private Label passwordLabel;
+        private TextBox usernameTextBox;
+        private TextBox passwordTextBox;
     }
 }
