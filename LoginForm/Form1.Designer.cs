@@ -47,7 +47,7 @@
             confirmButton.TabIndex = 0;
             confirmButton.Text = "Confirm";
             confirmButton.UseVisualStyleBackColor = false;
-            confirmButton.Click += button1_Click;
+            confirmButton.Click += Confirm_Button_Click;
             // 
             // cancelButton
             // 
@@ -59,7 +59,7 @@
             cancelButton.TabIndex = 1;
             cancelButton.Text = "Cancel";
             cancelButton.UseVisualStyleBackColor = false;
-            cancelButton.Click += button2_Click;
+            cancelButton.Click += Cancel_Button_Click;
             // 
             // usernameLabel
             // 
@@ -70,7 +70,7 @@
             usernameLabel.Size = new Size(60, 15);
             usernameLabel.TabIndex = 2;
             usernameLabel.Text = "Username";
-            usernameLabel.Click += label1_Click;
+            usernameLabel.Click += Username_Label_Click;
             // 
             // passwordLabel
             // 
@@ -81,7 +81,7 @@
             passwordLabel.Size = new Size(57, 15);
             passwordLabel.TabIndex = 3;
             passwordLabel.Text = "Password";
-            passwordLabel.Click += label2_Click;
+            passwordLabel.Click += Password_Label_Click;
             // 
             // usernameTextBox
             // 
